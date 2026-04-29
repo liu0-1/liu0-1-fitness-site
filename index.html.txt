@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroToFit 从零健身</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "思源黑体", sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #1A1A1A;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+        }
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #FF7D00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #1A1A1A;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        .price {
+            color: #FF7D00;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        footer {
+            background: #1A1A1A;
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ZeroToFit 从零健身</h2>
+    </header>
+
+    <div class="banner">
+        <h1>零基础也能练的健身教学</h1>
+        <p>免费干货 + 定制计划，帮你高效改变身材</p>
+        <a href="#courses" class="btn">查看课程</a>
+    </div>
+
+    <div class="section" id="free">
+        <h2>免费健身干货</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://picsum.photos/id/1/600/400" alt="训练">
+                <div class="card-content">
+                    <h3>新手居家无器械入门</h3>
+                    <p>不用器械，在家就能练的全身训练计划</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/2/600/400" alt="饮食">
+                <div class="card-content">
+                    <h3>减脂饮食避坑指南</h3>
+                    <p>不用挨饿，也能轻松瘦下来的饮食原则</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="courses">
+        <h2>付费训练计划</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://picsum.photos/id/3/600/400" alt="7天计划">
+                <div class="card-content">
+                    <h3>7天减脂入门计划</h3>
+                    <p>适合零基础，轻松开启你的健身之旅</p>
+                    <p class="price">¥9.9</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/4/600/400" alt="30天计划">
+                <div class="card-content">
+                    <h3>30天增肌塑形计划</h3>
+                    <p>针对新手的系统训练，打造紧致身材</p>
+                    <p class="price">¥59</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>联系微信：你的微信号 | 版权所有 © 2025 ZeroToFit</p>
+    </footer>
+</body>
+</html>
